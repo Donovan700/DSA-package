@@ -1,151 +1,152 @@
-Data Structures and Algorithms in C++
-This repository contains implementations of various data structures and algorithms in C++. It includes the following structures and algorithms:
+# Data Structures and Algorithms in C++
 
-Data Structures:
+This repository contains implementations of various data structures and algorithms in C++.
 
-Stack (Pile)
+## Table of Contents
+- [Overview](#overview)
+- [Data Structures](#data-structures)
+  - [Stack (Pile)](#stack)
+  - [Linked List (Liste Chainée)](#linked-list)
+  - [Vector (Vecteur)](#vector)
+- [Algorithms](#algorithms)
+  - [Sorting Algorithms](#sorting-algorithms)
+    - [Bubble Sort](#bubble-sort)
+    - [Insertion Sort](#insertion-sort)
+    - [Quick Sort](#quick-sort)
+    - [Interclass Sort](#interclass-sort)
+  - [Other Algorithms](#other-algorithms)
+    - [Postfix Evaluation](#postfix-evaluation)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Linked List (Liste Chainée)
+## Overview
 
-Vector (Vecteur)
+This project implements common data structures and algorithms that are fundamental to computer science. The implementations are designed to be easy to understand, efficient, and educational for those learning C++ and computer science concepts.
 
-Algorithms:
+## Data Structures
 
-Sorting Algorithms:
+### Stack
 
-Bubble Sort (bubblesort)
+A Last-In-First-Out (LIFO) data structure implemented using an array.
 
-Insertion Sort (triInsert)
+**Files:**
+- `expressionPost.cpp`: File containing Stack implementation
 
-Quick Sort (quicksort)
+**Operations:**
+- empile: Add an element to the top
+- depile: Remove the top element
 
-Interclass Sort (interclass)
+### Linked List
 
-Postfix Evaluation (expost)
+A collection of elements where each element points to the next, allowing for dynamic memory allocation.
 
-Table of Contents
-Introduction
+**Files:**
+- `createLinkedList.cpp`: Implementation of Linked List operations
 
-Data Structures
+**Operations:**
+- Insert: Add elements at the beginning, end, or specific position
+- Delete: Remove elements from the list
+- Search: Find elements in the list
+- Traverse: Iterate through all elements
 
-Stack
+### Vector
 
-Linked List
+A dynamic array implementation that allows for resizing and efficient element access.
 
-Vector
+**Files:**
+- `quickSort.cpp`: Implementation of Vector operations
+(Most of the files are using dynamic vector with pointers)
 
-Algorithms
+**Operations:**
+- Access by index
+- Insert and delete elements
+- Dynamic resizing
+- Size and capacity management
 
-Bubble Sort
+## Algorithms
 
-Insertion Sort
+### Sorting Algorithms
 
-Quick Sort
+#### Bubble Sort
 
-Interclass Sort
+A simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
-Postfix Evaluation
+**File:** `bubblesort.cpp`
 
-How to Run
+**Time Complexity:** O(n²)
 
-Contributing
+#### Insertion Sort
 
-Introduction
-This project implements common data structures and algorithms that are fundamental to computer science. The goal is to provide easy-to-understand and efficient implementations in C++ for educational and practical purposes.
+Builds the sorted array one element at a time by inserting each element into its correct position relative to the already sorted portion.
 
-Data Structures
-Stack
-The Stack is implemented using an array, supporting the typical push and pop operations. It follows a Last-In-First-Out (LIFO) principle.
+**File:** `triInsert.cpp`
 
-Files:
-stack.cpp: Implementation of the Stack data structure.
+**Time Complexity:** O(n²)
 
-stack.h: Header file for the Stack class.
+#### Quick Sort
 
-Linked List (Liste Chainée)
-The Linked List is implemented to hold a collection of elements where each element points to the next. The list supports operations such as insertion and deletion.
+A highly efficient divide-and-conquer algorithm that picks an element as a pivot and partitions the array into two sub-arrays that are then recursively sorted.
 
-Files:
-linkedlist.cpp: Implementation of the Linked List data structure.
+**File:** `quickSort.cpp`
 
-linkedlist.h: Header file for the Linked List class.
+**Time Complexity:** Average O(n log n), Worst O(n²)
 
-Vector (Vecteur)
-The Vector is implemented to allow dynamic resizing of an array. It supports access by index, insertion, deletion, and resizing of the array.
+#### Interclass Sort
 
-Files:
-vector.cpp: Implementation of the Vector class.
+A comparison-based sorting algorithm that involves organizing data in classes and sorting them using a predefined strategy.
 
-vector.h: Header file for the Vector class.
+**File:** `interclass.cpp`
 
-Algorithms
-Bubble Sort (bubblesort)
-Bubble Sort is a simple comparison-based algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+### Other Algorithms
 
-File:
-bubblesort.cpp: Implementation of the Bubble Sort algorithm.
+#### Postfix Evaluation
 
-Insertion Sort (triInsert)
-Insertion Sort builds the sorted array one element at a time. It works by inserting elements into their correct position relative to the already sorted portion.
+An algorithm that evaluates postfix expressions using a stack, processing the expression from left to right and evaluating operators as they are encountered.
 
-File:
-insertionSort.cpp: Implementation of the Insertion Sort algorithm.
+**File:** `expressionPost.cpp`
 
-Quick Sort (quicksort)
-Quick Sort is a highly efficient divide-and-conquer algorithm. It picks an element as a pivot and partitions the array into two sub-arrays that are then recursively sorted.
+## Getting Started
 
-File:
-quicksort.cpp: Implementation of the Quick Sort algorithm.
+### Prerequisites
 
-Interclass Sort (interclass)
-Interclass Sort is another comparison-based sorting algorithm. It involves organizing data in classes and sorting them using a predefined strategy.
+- C++ compiler (GCC, Clang, or Visual Studio)
+- C++11 or later
 
-File:
-interclassSort.cpp: Implementation of the Interclass Sort algorithm.
+### Installation
 
-Postfix Evaluation (expost)
-The Postfix Evaluation algorithm evaluates postfix expressions using a stack. It processes the expression from left to right and evaluates the operators as they are encountered.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Donovan700/DSA-package.git
+   cd DSA-package
+   ```
 
-File:
-postfixEval.cpp: Implementation of the Postfix Evaluation algorithm.
+### Usage
 
-How to Run
-Prerequisites
-A C++ compiler (e.g., GCC, Clang, or Visual Studio).
+To compile and run any individual component, use the following commands (example for Bubble Sort):
 
-C++ C++11 or later.
-
-Steps
-Clone the repository:
-
-bash
-Copier
-Modifier
-git clone git@github.com:Donovan700/DSA-package.git
-cd data-structures-and-algorithms
-Compile the desired file using the following command (e.g., for Bubble Sort):
-
-bash
-Copier
-Modifier
+```bash
+# Compile
 g++ bubblesort.cpp -o bubblesort
-Run the compiled file:
 
-bash
-Copier
-Modifier
+# Run
 ./bubblesort
-Similarly, you can compile and run other algorithms or data structure implementations by modifying the filename accordingly.
+```
 
-Contributing
-We welcome contributions to this project! If you'd like to add new features, fix bugs, or improve documentation, please follow these steps:
+## Contributing
 
-Fork the repository.
+Contributions are welcome! If you'd like to add new features, fix bugs, or improve documentation:
 
-Create a new branch (git checkout -b feature-branch).
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'feat: adding new feature'`)
+5. Push to the branch (`git push origin feature-branch`)
+6. Create a new Pull Request
 
-Commit your changes (git commit -am 'Add new feature').
+## License
 
-Push to the branch (git push origin feature-branch).
-
-Create a new pull request.
+This project is licensed under the MIT License - see the LICENSE file for details.
