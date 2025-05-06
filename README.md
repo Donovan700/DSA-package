@@ -5,9 +5,9 @@ This repository contains implementations of various data structures and algorith
 ## Table of Contents
 - [Overview](#overview)
 - [Data Structures](#data-structures)
-  - [Stack (Pile)](#stack)
-  - [Linked List (Liste Chainée)](#linked-list)
-  - [Vector (Vecteur)](#vector)
+  - [Stack](#stack)
+  - [Linked List](#linked-list)
+  - [Vector](#vector)
 - [Algorithms](#algorithms)
   - [Sorting Algorithms](#sorting-algorithms)
     - [Bubble Sort](#bubble-sort)
