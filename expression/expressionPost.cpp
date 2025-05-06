@@ -103,7 +103,7 @@ void depile(tind &val)
     }
     else
     {
-        cout << "Empty pile !" << endl;
+        cout << "Empty stack !" << endl;
         val = {'#', 0};
     }
 }
@@ -116,7 +116,7 @@ void empile(tind val)
     }
     else
     {
-        cout << "Full pile !" << endl;
+        cout << "Stack pile !" << endl;
     }
 }
 
